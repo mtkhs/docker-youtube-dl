@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker run --rm --user $UID:$GID -v $PWD:/workspace mtkhs/youtube-dl $0
+docker run --rm --user $UID:$GID -v $PWD:/workspace:delegated mtkhs/youtube-dl $0
 
