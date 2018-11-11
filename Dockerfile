@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-ENV DOWNLOADS_DIR ~/Downloads
+ENV DOWNLOADS_DIR /workspace
 ENV SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt
 
 RUN apk add --update --no-cache --virtual=dependencies curl \
