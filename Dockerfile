@@ -10,8 +10,7 @@ RUN apk add --update --no-cache --virtual=dependencies curl \
     && apk update \
     && apk del --update dependencies \
     && mkdir $DOWNLOADS_DIR \
-    && chmod a+rw $DOWNLOADS_DIR \
-    && rm -r /root/.cache
+    && chmod a+rw $DOWNLOADS_DIR
 
 WORKDIR $DOWNLOADS_DIR
 
