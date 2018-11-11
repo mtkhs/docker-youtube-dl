@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker run --rm --user $UID:$GID -v $PWD:~/Downloads mtkhs/youtube-dl $0
+
